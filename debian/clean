@@ -1,0 +1,8 @@
+# Force regeneration of the egg-info directory.
+async_generator.egg-info/
+
+# Created by debian/rules.
+docs/build/
+
+# Forgotten by upstream build system.
+.pytest_cache/

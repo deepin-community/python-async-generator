@@ -1,0 +1,46 @@
+python-async-generator (1.10-3) unstable; urgency=medium
+
+  * Rebuild with a recent sphinx embedding less JS libraries.
+  * Debhelper 13.
+
+ -- Nicolas Boulenguez <nicolas@debian.org>  Sat, 17 Oct 2020 08:43:58 +0000
+
+python-async-generator (1.10-2) unstable; urgency=medium
+
+  * Debhelper 12, Standards-Version 4.4.1
+  * Drop obsolete X-Python3-Version restriction.
+
+  [Matthias Klose <doko@ubuntu.com>]
+  * Build-depend on python3-doc instead of python3.7-doc. Closes: #951844.
+
+ -- Nicolas Boulenguez <nicolas@debian.org>  Sat, 22 Feb 2020 18:29:04 +0100
+
+python-async-generator (1.10-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Install new HTML documentation into a separate -doc package.
+  * Standards-Version: 4.2.0. Rules-Requires-Root: no.
+  * Update copyright file, both MIT and Apache-2.0 are allowed.
+  * Patch doc to avoid a non-packaged sphinx extension.
+  * Patch doc to use python3.7-doc instead of accessing the network.
+  * Register the documentation into doc-base.
+
+ -- Nicolas Boulenguez <nicolas@debian.org>  Sun, 19 Aug 2018 11:52:04 +0200
+
+python-async-generator (1.9-2) unstable; urgency=medium
+
+  * Fix missing component in VCS-* URLs.
+  * Simply remove egg-info subdirectory to ensure its regeneration,
+    instead of making a backup.
+  * Add X-Python minimal version.
+  * Replace hand-written test with generic autodep8 ones.
+  * Install README.rst documentation.
+  * Fix snapshot ordering in watch file.
+
+ -- Nicolas Boulenguez <nicolas@debian.org>  Mon, 23 Apr 2018 23:33:45 +0200
+
+python-async-generator (1.9-1) unstable; urgency=medium
+
+  * Initial release.  Closes: #896639.
+
+ -- Nicolas Boulenguez <nicolas@debian.org>  Sun, 22 Apr 2018 23:12:38 +0200

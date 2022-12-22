@@ -1,0 +1,9 @@
+version=4
+
+# Upstream develops on github but releases on pypi.
+# (the tarballs on github are blindly generated from tags)
+
+# The repetition replaces - with _ to match the href.
+opts=uversionmangle=s/(rc|a|b|c)/~$1/ \
+https://pypi.debian.net/async-generator \
+  /async_generator/async_generator@ANY_VERSION@@ARCHIVE_EXT@

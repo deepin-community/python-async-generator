@@ -1,0 +1,13 @@
+Document: async-generator
+Title: Async generators and context managers for Python 3.5+
+Author: Nathaniel J. Smith <njs@pobox.com>
+Abstract:
+ The python3 language provides some structures to process streaming
+ data with an interface similar to the iteration structures.  This
+ module adds some convenient features like the yield from construct or
+ context managers.
+Section: Programming
+
+Format: HTML
+Index: /usr/share/doc/python3-async-generator/html/index.html
+Files: /usr/share/doc/python3-async-generator/html

@@ -1,0 +1,24 @@
+Description: do not use sphinxcontrib_trio, not packaged in Debian.
+Author: Nicolas Boulenguez <nicolas@debian.org>
+Forwarded: not-needed
+
+--- a/docs/source/conf.py
++++ b/docs/source/conf.py
+@@ -44,7 +44,6 @@
+     'sphinx.ext.intersphinx',
+     'sphinx.ext.coverage',
+     'sphinx.ext.napoleon',
+-    'sphinxcontrib_trio',
+ ]
+ 
+ intersphinx_mapping = {
+--- a/docs/source/reference.rst
++++ b/docs/source/reference.rst
+@@ -164,7 +164,6 @@
+ covered:
+ 
+ .. function:: asynccontextmanager
+-   :decorator:
+ 
+    This is a backport of :func:`contextlib.asynccontextmanager`, which
+    wasn't added to the standard library until Python 3.7.

@@ -1,0 +1,19 @@
+Description: let sphinx use packaged python doc instead of accessing network
+ This patch cannot be forwarded because it hardcodes a path specifict
+ to Debian.
+Author: Nicolas Boulenguez <nicolas@debian.org>
+Forwarded: not-needed
+
+--- a/docs/source/conf.py
++++ b/docs/source/conf.py
+@@ -49,8 +49,8 @@
+ intersphinx_mapping = {
+     # 3.7 so that we can link to contextlib.asynccontextmanager
+     # This URL can switch back to /3 after cpython 3.7 is released
+-    "python": ('https://docs.python.org/3.7', None),
+-    "trio": ('https://trio.readthedocs.io/en/stable', None),
++    "python": ('https://docs.python.org/3.7',
++               ('/usr/share/doc/python3.7-doc/html/objects.inv', None)),
+ }
+ 
+ autodoc_member_order = "bysource"
